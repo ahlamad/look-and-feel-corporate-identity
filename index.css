@@ -1,3 +1,24 @@
-body {
-  background-color: var(--primary-color);
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-bar {
+    background-color: var(--primary-color);
+}
+
+.header-title {
+    color: var(--white);
+    font-size: var(--second-line);
+    font-weight: 700;
+}
+
+.profile-settings {
+    width: 30px;
+    height: 30px;
+}
+
+.user-name {
+    font-size: var(--first-line);
 }
