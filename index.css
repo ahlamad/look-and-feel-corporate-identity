@@ -4,14 +4,37 @@
     list-style: none;
 }
 
-.header-bar {
+.nav-bar{
     background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+
+        li {
+            display: grid;
+            place-items: center;
+        }
+    }
 }
 
-.header-title {
+.header-bar {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    display: flex;
+
+    .header-title {
     color: var(--white);
     font-size: var(--second-line);
     font-weight: 700;
+    text-align: center;
+}
 }
 
 .profile-settings {
