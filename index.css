@@ -40,7 +40,7 @@
         font-weight: 700;
     }
 
-    svg {
+    a {
         grid-column: 3;
         justify-self: end;
     }
