@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    list-style: none;
+}
+
+.nav-bar{
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* Dit is uiteindelijk toegevoegd zodat ik een padding-bottom kan geven aan de main */
+    height: 4em;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+
+        li {
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+
+.header-bar {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    padding: 1.5em;
+
+    .notifications-title {
+        grid-column: 2;
+        color: var(--white);
+        grid-row: 1;
+        font-size: var(--first-line);
+    }
+
+    a {
+        grid-column: 1;
+        justify-self: start;
+    }
+}
+
