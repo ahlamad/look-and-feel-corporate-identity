@@ -56,17 +56,28 @@
     } */
 }
 
-.notification {
+/* Vraag over svg */
+.notification-section {
     margin: 1em;
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
+    place-items: center;
     grid-column: 1;
 
     svg, svg > * {
-        fill: var(--star-button);
-        stroke: var(--star-button);
+
+        &:first-child {
+            fill: var(--star-button);
+            stroke: var(--star-button);
+            translate: 0 5px;
+        }
+
+        &:nth-of-type(2) {
+            fill: var(--like-button);
+            stroke: var(--star-button);
+            translate: 0 3px;    
+        } 
     }
 
     .checkbox-slider {
@@ -74,3 +85,9 @@
     }  
 }
 
+.save-button {
+    translate: 33em 5em;
+    border-radius: 20px;
+    width: 12vw;
+
+}
