@@ -49,13 +49,12 @@
 .user-name {
     font-size: var(--first-line);
     line-height: 2em;
-    padding-top: 1.5em;
+    padding-top: 1.2em;
 }
 
 .user-section {
     width: 100dvw;
     display: grid;
-    grid-template-columns: 1fr;
     place-items: center;
     grid-template-rows: 1fr 1.3fr;
     background-color: var(--grey-background);
@@ -80,13 +79,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
-        padding: 1rem;
-        gap: 10em;
+        gap: 4em;
 
         li {
             place-items: center;
 
-            svg {
+            svg, svg > * {
                 fill: var(--primary-color);
             }
         }
