@@ -83,17 +83,11 @@ main {
 /* Gekeken hoe het eruit ziet bij Iphone 12 Pro min-width:390px */
 .only-text-button {
     background-color: var(--white);
-    font-size: 1.5em;
-    display: grid;
-    place-items: end;
-    width: 100vw;
-    padding-right: 1.5em;
     font-weight: 400;
-    translate: 0 2em;
-
-    /* Groot en half scherm op laptop */
-    @media (min-width: 700px) {
-        padding-right: 1.5em;
-        translate: 0 3.1em;
-    }
+    padding-left: 1em;
+    background-color: var(--white);
+    padding: .8em;
+    border-radius: 0;
+    width: 100vw;
+    text-align: start;
 }

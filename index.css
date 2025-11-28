@@ -93,3 +93,14 @@
 .user-activity-list svg {
     color: var(--primary-color);
     }
+
+.photos-snappmap {
+    img {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 1em;
+        width: 4em;
+        height: 4em;
+    }
+}
