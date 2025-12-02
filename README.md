@@ -25,9 +25,22 @@ Je kunt in de app foto's liken, disliken en bewaren in jouw favorieten. Op jouw 
 https://ahlamad.github.io/look-and-feel-corporate-identity/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De website is gebouwd met HTML en CSS, mobile-first en responsief.
+
+De HTML heeft een duidelijke semantische structuur met `<nav>`, `<header>` en `<main>`. In de `<main>` staan vooral `<section>` elementen met daarin `<article>` elementen die `<ul>` lijsten kunnen bevatten.
+De navigatie is een fixed, gecentreerde bottom nav-bar, waardoor je als gebruiker makkelijk door kan navigeren op elk scherm.
+De header heeft een gecentreerde titel met een icoon waarmee je terug kan naar de vorige pagina en/of een andere pagina. Dit is volgens de huisstijl.
+De main bestaat uit persoonlijke informatie met overzichtelijke grids en consistente kleuren en typografie van de user.
+
+De CSS voor de website heeft de volgorde zoals het HTML-document en is mobile-first ontworpen. Met zo veel mogelijk custom properties uit de samengemaakte stylesheet zijn de kleuren en typografie bepaald.
+
+De code is overzichtelijk, dankzij de consistente opbouw, het volgen van de styleguide en bestaande huisstijl van de opdrachtgever.
 
 ## Bronnen
+[Cascade, specifity & inheritance](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts)
+[Text & font styling](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
+[HTML input elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input)
+[User Interface pseudo classes voor input elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#css)
 
 ## Licentie
 
