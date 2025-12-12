@@ -58,36 +58,6 @@
     }
 }
 
-/* Vraag over svg */
-.notification-section {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    grid-column: 1;
-    background-color: var(--white);
-    padding: 1em;
-
-    svg, svg > * {
-
-        &:first-child {
-            fill: var(--star-button);
-            stroke: var(--star-button);
-            translate: 0 5px;
-        }
-
-        &:nth-of-type(2) {
-            fill: var(--like-button);
-            stroke: var(--star-button);
-            translate: 0 3px;    
-        } 
-    }
-
-    .checkbox-slider {
-        grid-column: 2;
-        padding: .1em;
-    }  
-}
 
 .notification-list-list {
     display: flex;
@@ -101,3 +71,56 @@
         color: var(--primary-color);
     }
 }
+
+
+.notification-list-list li {
+
+    .notification-section {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-column: 1;
+        background-color: var(--white);
+        padding: 1em;
+
+        svg, svg > * {
+            fill: var(--star-button);
+            stroke: var(--star-button);
+            translate: 0 3px;
+        }
+
+        
+
+        .checkbox-slider {
+            grid-column: 2;
+            padding: .1em;
+        }  
+    }
+
+    &:nth-of-type(2) {
+        .notification-section {
+            svg, svg > * {
+                fill: var(--tomato-button);
+                stroke: var(--tomato-button);
+                translate: 0 3px;  
+            }
+        }
+    }
+
+        &:nth-of-type(3) {
+        .notification-section {
+            svg, svg > * {
+                fill: var(--like-button);
+                stroke: var(--like-button);
+                translate: 0 3px;  
+            }
+        }
+    }
+
+}
+
+/* Vraag over svg */
+
+
+
